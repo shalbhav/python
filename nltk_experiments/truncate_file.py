@@ -8,7 +8,8 @@ from nltk.tokenize import word_tokenize
 
 if __name__=="__main__":
 
-    nltk.data.path.append('/home/xyborg/nltk_data/')
+    # append path to nltk_data files
+    nltk.data.path.append('/path/to/nltk_data')
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--ifile", help="input file", required=True)
