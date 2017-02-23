@@ -1,4 +1,4 @@
-# On Anagram, Bi-Gram and er... One-gram?
+# On Anagram, Bi-Gram and er... One-Gram?
 
 Script to create all possible anagrams of same length as given word
 and check with a dictionary file for english words from the list.
@@ -23,10 +23,6 @@ In [18]: from collections import Counter
 
 In [19]: with open('words.txt') as f:                                           
     ...:     en_words = set(word.strip().lower() for word in f)
-
-enwords_file = 'words.txt'
-with open(enwords_file) as f:
-    english_words = set(word.strip().lower() for word in f)
 
 In [20]: two_letter_grams = [w[i:i+2] for w in en_words for i in range(0, len(w)
     ...: -1) if w[i:i+2].isalpha()]
@@ -80,7 +76,7 @@ max    64994.000000
 
 ```
 
-Let's find out which pair of consecutive letters are the least occurring and most occurring. If we sort the DataFrame we can also see the most common and least common bi-grams as computed from the dictionary file we are using.
+Let's find out which pair of consecutive letters are the least occurring and most occurring. If we sort the DataFrame we can also see the most common and least common bi-grams as computed from our dictionary file.
 
 ```
 In [25]: df[df.values == 1]
@@ -161,7 +157,7 @@ er  64994
 As expected 'er', 'on', 'in' are some of the bi-grams frequently occurring.
 
 ## Frequency of occurrence of the Alphabet
-Let's find the frequency of occurrence of each alphabet in the english dictionary file we are using.
+Let's find the frequency of occurrence of each alphabet in our english dictionary file.
 
 ```
 In [70]: one_grams = [a for w in en_words for a in w if w.isalpha()]
@@ -207,7 +203,7 @@ In [122]: df_alpha.plot(kind='bar', legend=False, title='Frequency of Alphabets'
 
 ![Alt text](img/alpha_freq.png "Frequency of Alphabets in the English Dictionary")
 
-This is a trimodal distribution and agrees quite closely with the distribution in [Wikipedia](https://en.wikipedia.org/wiki/Frequency_analysis).
+This is a trimodal distribution and agrees quite closely with the distribution described in this [Wikipedia](https://en.wikipedia.org/wiki/Frequency_analysis) page.
 
 ### References
 1. "words.txt" file from https://github.com/dwyl/english-words. Please see license info on that page.
