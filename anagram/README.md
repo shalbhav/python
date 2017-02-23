@@ -16,7 +16,7 @@ List of possible words:
 ```
 
 ## Word Analysis (Two Letter Bi-Grams)
-Let's create a frequency count of all consecutive letters in the english dictionary. For our analysis, I am using the words.txt file.
+Let's create a frequency count of all consecutive letters in the english dictionary. For our analysis, I am using the words.txt file. Some variations in what we see may occur depending on the training file used.
 
 ```
 In [18]: from collections import Counter 
@@ -133,6 +133,8 @@ qg      1
 px      1
 pz      1
 qf      1
+...
+...
 ql      2
 wq      2
 jp      2
@@ -156,6 +158,8 @@ er  64994
 [654 rows x 1 columns]
 
 ```
+As expected 'er', 'on', 'in' are some of the bi-grams frequently occurring.
+
 ## Frequency of occurrence of the Alphabet
 Let's find the frequency of occurrence of each alphabet in the english dictionary file we are using.
 
@@ -204,3 +208,7 @@ In [122]: df_alpha.plot(kind='bar', legend=False, title='Frequency of Alphabets'
 ![Alt text](img/alpha_freq.png "Frequency of Alphabets in the English Dictionary")
 
 This is a trimodal distribution and agrees quite closely with the distribution in [Wikipedia](https://en.wikipedia.org/wiki/Frequency_analysis).
+
+### References
+1. "words.txt" file from https://github.com/dwyl/english-words. Please see license info on that page.
+2. https://en.wikipedia.org/wiki/Frequency_analysis
