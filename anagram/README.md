@@ -1,3 +1,4 @@
+# On Anagram, Bi-Gram and er... One-gram?
 
 Script to create all possible anagrams of same length as given word
 and check with a dictionary file for english words from the list.
@@ -196,7 +197,7 @@ Let's plot the distribution of the letters as seen in this dictionary.
 
 ```
 In [120]: df_alpha = pd.DataFrame([Counter(one_grams)])
-In [121]: df_alpha = df_alpha.
+In [121]: df_alpha = df_alpha.T
 In [122]: df_alpha.plot(kind='bar', legend=False, title='Frequency of Alphabets')
 ```
 
