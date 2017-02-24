@@ -1,6 +1,6 @@
 # Python Projects
 1. Anagram
-* [Anagram, Bi-Gram and 1-Gram?](anagram/)
+   * [Anagram, Bi-Gram and 1-Gram?](anagram/)
 2. NLTK Experiments
-* truncate_file.py - truncate least used words from file. [README] (nltk_experiments).
+   * truncate_file.py - truncate least used words from file. [README] (nltk_experiments).
 
