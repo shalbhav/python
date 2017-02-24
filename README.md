@@ -1,6 +1,6 @@
 # Python Projects
-## Anagram
-List anagrams of a word and search in dictionary
-## NLTK Experiments
-truncate_file.py - truncate least used words from file
+1. Anagram
+* [Anagram, Bi-Gram and 1-Gram?](anagram/)
+2. NLTK Experiments
+* truncate_file.py - truncate least used words from file. [README] (nltk_experiments).
 
